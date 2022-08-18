@@ -55,7 +55,7 @@ function convertMs(ms) {
 
   btnStart.addEventListener('click', () => {
     let timer = setInterval(() => {
-      let countdown = new Date(text.value) - new Date();
+      let countdown = new Date(chooseDate.value) - new Date();
       btnStart.disabled = true;
       if (countdown >= 0) {
         let timeObject = convertMs(countdown);
